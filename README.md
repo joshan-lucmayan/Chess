@@ -59,11 +59,5 @@ This repository is primarily a learning exercise. The focus is on:
 
 ---
 
-## License
-
-Use this project for learning and experimentation. (Add a license file if you want to share it publicly.)
-
----
-
 *Made for practice & personal growth.*
 

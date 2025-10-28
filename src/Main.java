@@ -1,3 +1,5 @@
+import java.util.Scanner;
+
 public class Main {
     public static void main(String[] args){
         /*
@@ -14,6 +16,36 @@ public class Main {
         //Result
 
         BoardPieces boardPieces = new BoardPieces();
+        Printer printer = new Printer();
+        Scanner scanner = new Scanner(System.in);
+        int choice;
+        String urMoves;
+
+        printer.println("Welcome to Chess");
+        boardPieces.displayBoardPieces(); //temp view
+
+        printer.println("1. White");
+        printer.println("2. Black");
+        printer.print("Before we start, please choose your color: ");
+        choice = scanner.nextInt();
+        scanner.nextLine();
+
+        if(choice == 1){
+            printer.println("Initializing the board...");
+
+            boardPieces.whiteInitialPieces();
+            printer.print("Enter your move: ");
+            urMoves = scanner.nextLine();
+        }
+        else if(choice == 2){
+            printer.println("Initializing the board...");
+
+            boardPieces.blackInitialPieces();
+            printer.print("Enter your move: ");
+            urMoves = scanner.nextLine();
+        }
+
+
 
     }
 }

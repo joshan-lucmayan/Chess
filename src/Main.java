@@ -33,7 +33,6 @@ public class Main {
         if(choice == 1){
             printer.println("Initializing the board...");
 
-            boardPieces.whiteInitialPieces();
             printer.print("Enter your move: ");
             urMoves = scanner.nextLine();
         }

@@ -40,7 +40,6 @@ public class Main {
         else if(choice == 2){
             printer.println("Initializing the board...");
 
-            boardPieces.blackInitialPieces();
             printer.print("Enter your move: ");
             urMoves = scanner.nextLine();
         }

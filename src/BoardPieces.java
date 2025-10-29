@@ -1,13 +1,32 @@
 public class BoardPieces {
-    private String[][] board;
-    private String[][] pieces;
     private final Printer printer;
 
-    BoardPieces(){
+    private String[][] blackInitialPieces = {
+            {"♖", "♘", "♗", "♔", "♕", "♗", "♘", "♖"}, //1
+            {"♙", "♙", "♙", "♙", "♙", "♙", "♙", "♙"}, //2
+            {" ", " ", " ", " ", " ", " ", " ", " "}, //3
+            {" ", " ", " ", " ", " ", " ", " ", " "}, //4
+            {" ", " ", " ", " ", " ", " ", " ", " "}, //5
+            {" ", " ", " ", " ", " ", " ", " ", " "}, //6
+            {"♟", "♟", "♟", "♟", "♟", "♟", "♟", "♟"}, //7
+            {"♜", "♞", "♝", "♚", "♛", "♝", "♞", "♜"}  //8
+    };
+
+    private String[][] whiteInitialPieces = {
+            {"♜", "♞", "♝", "♛", "♚", "♝", "♞", "♜"},
+            {"♟", "♟", "♟", "♟", "♟", "♟", "♟", "♟"},
+            {" ", " ", " ", " ", " ", " ", " ", " "},
+            {" ", " ", " ", " ", " ", " ", " ", " "},
+            {" ", " ", " ", " ", " ", " ", " ", " "},
+            {" ", " ", " ", " ", " ", " ", " ", " "},
+            {"♙", "♙", "♙", "♙", "♙", "♙", "♙", "♙"},
+            {"♖", "♘", "♗", "♕", "♔", "♗", "♘", "♖"},
+    };
+
+    BoardPieces() {
         this.printer = new Printer();
-        this.pieces = new String[8][8];
-        this.board = new String[8][8];
     }
+
 
     public void displayBoardPieces(){
         for(int i = 1; i <= 9; i++){
@@ -24,6 +43,8 @@ public class BoardPieces {
     }
 
 
+
+    /*
     public void blackInitialPieces(){
         printer.println("1 | ♖ | ♘ | ♗ | ♔ | ♕ | ♗ | ♘ | ♖ |");
         printer.println("2 | ♙ | ♙ | ♙ | ♙ | ♙ | ♙ | ♙ | ♙ |");
@@ -47,4 +68,6 @@ public class BoardPieces {
         printer.println("| ♖ | ♘ | ♗ | ♕ | ♔ | ♗ | ♘ | ♖ | 8");
         printer.println("  a   b   c   d   e   f   g   h ");
     }
+
+     */
 }

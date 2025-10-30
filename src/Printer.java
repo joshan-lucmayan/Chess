@@ -7,4 +7,20 @@ public class Printer {
     void print(String i){
         System.out.print(i);
     }
+
+    /*
+        Testing purposes
+         */
+    /*
+        Testing purposes
+         */
+    /*
+        Testing purposes
+         */
+    /*
+        Testing purposes
+         */
+    /*
+        Testing purposes
+         */
 }

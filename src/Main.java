@@ -15,6 +15,18 @@ public class Main {
         //LOGIC
         //Result
 
+        /*
+        Testing purposes
+         */
+
+        /*
+        Testing purposes
+         */
+
+        /*
+        Testing purposes
+         */
+
         BoardPieces boardPieces = new BoardPieces();
         Printer printer = new Printer();
         Scanner scanner = new Scanner(System.in);

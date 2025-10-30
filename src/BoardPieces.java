@@ -24,6 +24,19 @@ public class BoardPieces {
             {"♖", "♘", "♗", "♕", "♔", "♗", "♘", "♖"},
     };
 
+    /*
+        Testing purposes
+         */
+    /*
+        Testing purposes
+         */
+    /*
+        Testing purposes
+         */
+    /*
+        Testing purposes
+         */
+
     BoardPieces() {
         this.printer = new Printer();
     }
@@ -72,5 +85,18 @@ public class BoardPieces {
             System.out.println("    a   b   c   d   e   f   g   h ");
         }
     }
+
+    /*
+        Testing purposes
+         */
+    /*
+        Testing purposes
+         */
+    /*
+        Testing purposes
+         */
+    /*
+        Testing purposes
+         */
 
 }

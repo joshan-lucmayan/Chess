@@ -44,5 +44,10 @@ public class Main {
             urMoves = scanner.nextLine();
         }
 
+        System.out.println("ksguhue");
+        for(int i = 0; i < 100; i++){
+            System.out.println("Hell nah");
+        }
+
     }
 }

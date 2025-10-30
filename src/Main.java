@@ -29,14 +29,16 @@ public class Main {
         scanner.nextLine();
 
         if(choice == 1){
+            boardPieces.setPlayersColor("White");
             printer.println("Initializing the board...");
-            boardPieces.displayBoardPieces("White");
+            boardPieces.displayBoardPieces();
             printer.print("Enter your move (e.g Nf3 (Knight to F3)): ");
             urMoves = scanner.nextLine();
         }
         else if(choice == 2){
+            boardPieces.setPlayersColor("Black");
             printer.println("Initializing the board...");
-            boardPieces.displayBoardPieces("Black");
+            boardPieces.displayBoardPieces();
             printer.print("Enter your move (e.g Nf3 (Knight to F3)): ");
             urMoves = scanner.nextLine();
         }

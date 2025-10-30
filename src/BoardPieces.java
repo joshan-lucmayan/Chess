@@ -1,5 +1,6 @@
 public class BoardPieces {
     private final Printer printer;
+    private String playersColor;
 
     private String[][] blackInitialPieces = {
             {"♖", "♘", "♗", "♔", "♕", "♗", "♘", "♖"}, //1
@@ -27,8 +28,26 @@ public class BoardPieces {
         this.printer = new Printer();
     }
 
+    //Set & Get Colors Player
+
+    public String getPlayersColor(){
+        return this.playersColor;
+    }
+
+    public void setPlayersColor(String playersColor){
+        this.playersColor = playersColor;
+    }
+
+    //Players Moves
+
+    public void moveThePiece(String playersColor){
+
+    }
+
+    //Display LIVE Board Pieces
+
     int numBoard = 1;
-    public void displayBoardPieces(String playersColor){
+    public void displayBoardPieces(){
         if(playersColor.equalsIgnoreCase("Black")){
             for(int i = 0; i < 8; i++){
                 System.out.print(numBoard + " |");

@@ -8,19 +8,4 @@ public class Printer {
         System.out.print(i);
     }
 
-    /*
-        Testing purposes
-         */
-    /*
-        Testing purposes
-         */
-    /*
-        Testing purposes
-         */
-    /*
-        Testing purposes
-         */
-    /*
-        Testing purposes
-         */
 }

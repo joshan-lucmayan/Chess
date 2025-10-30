@@ -22,8 +22,6 @@ public class Main {
         String urMoves;
 
         printer.println("Welcome to Chess");
-        boardPieces.displayBoardPieces("White"); //temp view
-
         printer.println("1. White");
         printer.println("2. Black");
         printer.print("Before we start, please choose your color: ");
@@ -32,18 +30,16 @@ public class Main {
 
         if(choice == 1){
             printer.println("Initializing the board...");
-
-            printer.print("Enter your move: ");
+            boardPieces.displayBoardPieces("White");
+            printer.print("Enter your move (e.g Nf3 (Knight to F3)): ");
             urMoves = scanner.nextLine();
         }
         else if(choice == 2){
             printer.println("Initializing the board...");
-
-            printer.print("Enter your move: ");
+            boardPieces.displayBoardPieces("Black");
+            printer.print("Enter your move (e.g Nf3 (Knight to F3)): ");
             urMoves = scanner.nextLine();
         }
-
-
 
     }
 }

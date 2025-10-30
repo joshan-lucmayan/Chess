@@ -22,7 +22,7 @@ public class Main {
         String urMoves;
 
         printer.println("Welcome to Chess");
-        boardPieces.displayBoardPieces(); //temp view
+        boardPieces.displayBoardPieces("White"); //temp view
 
         printer.println("1. White");
         printer.println("2. Black");

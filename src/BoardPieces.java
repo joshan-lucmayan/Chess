@@ -27,18 +27,30 @@ public class BoardPieces {
         this.printer = new Printer();
     }
 
-
-    public void displayBoardPieces(){
-        for(int i = 1; i <= 9; i++){
-            if(i == 9){
-                System.out.println("    h   g   f   e   d   c   b   a ");
-                break;
+    int numBoard = 1;
+    public void displayBoardPieces(String playersColor){
+        if(playersColor.equalsIgnoreCase("Black")){
+            for(int i = 0; i < 8; i++){
+                System.out.print(numBoard + " |");
+                for(int j = 0; j < 8; j++){
+                    System.out.print(" " + blackInitialPieces[i][j] + " " + "|");
+                }
+                printer.println("");
+                numBoard++;
             }
-            System.out.print(i + " |");
-            for(int j = 1; j <= 8; j++){
-                System.out.print("   " + "|");
+            System.out.println("    h   g   f   e   d   c   b   a ");
+        }
+        else if(playersColor.equalsIgnoreCase("White")){
+            numBoard = 8;
+            for(int i = 0; i < 8; i++){
+                System.out.print(numBoard + " |");
+                for(int j = 0; j < 8; j++){
+                    System.out.print(" " + whiteInitialPieces[i][j] + " " + "|");
+                }
+                printer.println("");
+                numBoard--;
             }
-            printer.println("");
+            System.out.println("    a   b   c   d   e   f   g   h ");
         }
     }
 

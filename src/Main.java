@@ -15,44 +15,6 @@ public class Main {
         //LOGIC
         //Result
 
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-
-
 
         BoardPieces boardPieces = new BoardPieces();
         Printer printer = new Printer();
@@ -81,25 +43,6 @@ public class Main {
             printer.print("Enter your move (e.g Nf3 (Knight to F3)): ");
             urMoves = scanner.nextLine();
         }
-
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
-        System.out.println("Testing purposes");
 
     }
 }

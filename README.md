@@ -7,7 +7,7 @@ A **console-based chess game** written in Java. This is a solo project I built t
 ## Features (Planned)
 
 * ASCII art for chess pieces displayed in the terminal
-* Move input using **standard algebraic notation** (e.g., `Nf4` — Knight to f4)
+* Move input using **standard algebraic notation** (e.g., `e2e4` — Pawn to e4)
 * Turn-based gameplay with move validation and basic rule enforcement
 
 ---
@@ -22,7 +22,7 @@ A **console-based chess game** written in Java. This is a solo project I built t
    * `Nf3` — knight to f3
    * `O-O` or `O-O-O` — castling (if implemented)
 
-> Example: `Nf4` means "Knight to f4".
+> Example: `e2e4` means "Pawn to e4".
 
 ---
 

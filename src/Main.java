@@ -32,15 +32,19 @@ public class Main {
         if(choice == 1){
             boardPieces.setPlayersColor("White");
             printer.println("Initializing the board...");
-            boardPieces.displayBoardPieces();
-            printer.print("Enter your move (e.g Nf3 (Knight to F3)): ");
-            urMoves = scanner.nextLine();
+            while(true){
+                boardPieces.displayBoardPieces();
+                printer.print("Enter your move (e.g e2e4 (Pawn e2 to e4)): ");
+                urMoves = scanner.nextLine();
+
+                boardPieces.moveThePiece(urMoves);
+            }
         }
         else if(choice == 2){
             boardPieces.setPlayersColor("Black");
             printer.println("Initializing the board...");
             boardPieces.displayBoardPieces();
-            printer.print("Enter your move (e.g Nf3 (Knight to F3)): ");
+            printer.print("Enter your move (e.g e2e4 (Pawn e2 to e4)): ");
             urMoves = scanner.nextLine();
         }
 

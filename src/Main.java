@@ -9,6 +9,8 @@ public class Main {
         That's all
          */
 
+        //Task: debugging code
+
 
         BoardPieces boardPieces = new BoardPieces();
         Scanner scanner = new Scanner(System.in);

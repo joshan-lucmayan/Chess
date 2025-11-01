@@ -29,54 +29,63 @@ public class Main {
         choice = scanner.nextInt();
         scanner.nextLine();
 
-
         int moveCounterWhite = 0;
         int moveCounterBlack = 0;
-        if(choice == 1){
+
+        if (choice == 1) {
             boardPieces.setPlayersColor("White");
             printer.println("Initializing the board...");
 
-            while(true){
-                while(moveCounterWhite == moveCounterBlack){
-                    boardPieces.displayBoardPieces();
-                    printer.print("Enter your move (e.g e2e4 (Pawn e2 to e4)): ");
+            while (true) {
+                // White's turn
+                while (moveCounterWhite == moveCounterBlack) {
+                    boardPieces.displayBoardPieces(); // White at bottom
+                    printer.println("It's White's turn!");
+                    printer.print("Enter your move (e.g. e2e4): ");
                     move = scanner.nextLine();
                     boardPieces.moveThePiece(move);
                     moveCounterWhite++;
                 }
-                while(moveCounterBlack != moveCounterWhite){
-                    boardPieces.displayBoardPieces();
-                    printer.println("Its black turn!");
-                    printer.print("Enter your move (e.g e2e4 (Pawn e7 to e5)): ");
+
+                // Black's turn
+                while (moveCounterBlack != moveCounterWhite) {
+                    boardPieces.displayBoardPieces(); // same board orientation
+                    printer.println("It's Black's turn!");
+                    printer.print("Enter your move (e.g. e7e5): ");
                     move = scanner.nextLine();
                     boardPieces.moveThePiece(move);
                     moveCounterBlack++;
                 }
             }
 
-        }
-        else if(choice == 2){
+        } else if (choice == 2) {
             boardPieces.setPlayersColor("Black");
             printer.println("Initializing the board...");
 
-            while(true){
-                while(moveCounterWhite == moveCounterBlack){
-                    boardPieces.displayBoardPieces();
-                    printer.print("Enter your move (e.g e2e4 (Pawn e2 to e4)): ");
-                    move = scanner.nextLine();
-                    boardPieces.moveThePiece(move);
-                    moveCounterWhite++;
-                }
-                while(moveCounterBlack != moveCounterWhite){
-                    boardPieces.displayBoardPieces();
-                    printer.println("Its white turn!");
-                    printer.print("Enter your move (e.g e2e4 (Pawn e7 to e5)): ");
+            while (true) {
+                // Black's turn first (since player is black)
+                while (moveCounterWhite == moveCounterBlack) {
+                    boardPieces.displayBoardPieces(); // Black at bottom (auto handled)
+                    printer.println("It's Black's turn!");
+                    printer.print("Enter your move (e.g. e7e5): ");
                     move = scanner.nextLine();
                     boardPieces.moveThePiece(move);
                     moveCounterBlack++;
                 }
+
+                // White's turn
+                while (moveCounterBlack != moveCounterWhite) {
+                    boardPieces.displayBoardPieces(); // stays flipped for black player
+                    printer.println("It's White's turn!");
+                    printer.print("Enter your move (e.g. e2e4): ");
+                    move = scanner.nextLine();
+                    boardPieces.moveThePiece(move);
+                    moveCounterWhite++;
+                }
             }
         }
+
+
 
 
     }

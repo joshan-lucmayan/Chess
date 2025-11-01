@@ -73,27 +73,30 @@ public class BoardPieces {
     //Display live board
     public void displayBoardPieces() {
         if (playersColor.equalsIgnoreCase("Black")) {
-            int numBoard = 1;
-            for (int i = 0; i < 8; i++) {
-                System.out.print(numBoard + " |");
-                for (int j = 0; j < 8; j++) {
+            // Black sees their pieces at the bottom (flipped view)
+            int rank = 1;
+            for (int i = 7; i >= 0; i--) { // start from bottom row to top
+                System.out.print(rank + " |");
+                for (int j = 7; j >= 0; j--) { // reverse columns (h to a)
                     System.out.print(" " + blackInitialPieces[i][j] + " |");
                 }
                 printer.println("");
-                numBoard++;
+                rank++;
             }
-            System.out.println("    a   b   c   d   e   f   g   h");
-        } else { // White
-            int numBoard = 8;
-            for (int i = 0; i < 8; i++) {
-                System.out.print(numBoard + " |");
-                for (int j = 0; j < 8; j++) {
+            System.out.println("    h   g   f   e   d   c   b   a"); // flipped file labels
+        } else {
+            // White sees their pieces at the bottom (normal)
+            int rank = 8;
+            for (int i = 0; i < 8; i++) { // top to bottom
+                System.out.print(rank + " |");
+                for (int j = 0; j < 8; j++) { // normal left to right
                     System.out.print(" " + whiteInitialPieces[i][j] + " |");
                 }
                 printer.println("");
-                numBoard--;
+                rank--;
             }
-            System.out.println("    a   b   c   d   e   f   g   h");
+            System.out.println("    a   b   c   d   e   f   g   h"); // normal file labels
         }
     }
+
 }

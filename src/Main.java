@@ -17,15 +17,14 @@ public class Main {
 
 
         BoardPieces boardPieces = new BoardPieces();
-        Printer printer = new Printer();
         Scanner scanner = new Scanner(System.in);
         int choice;
         String move;
 
-        printer.println("Welcome to Chess");
-        printer.println("1. White");
-        printer.println("2. Black");
-        printer.print("Before we start, please choose your color: ");
+        System.out.println("Welcome to Chess");
+        System.out.println("1. White");
+        System.out.println("2. Black");
+        System.out.println("Before we start, please choose your color: ");
         choice = scanner.nextInt();
         scanner.nextLine();
 
@@ -34,20 +33,20 @@ public class Main {
 
         if (choice == 1) { // White
             boardPieces.setPlayersColor("White");
-            printer.println("Initializing the board...");
+            System.out.println("Initializing the board...");
 
             while (true) {
                 while (moveCounterWhite == moveCounterBlack) {
                     boardPieces.displayBoardPieces(false); // White bottom
-                    printer.print("Enter your move (e.g. e2e4): ");
+                    System.out.println("Enter your move (e.g. e2e4): ");
                     move = scanner.nextLine();
                     boardPieces.moveThePiece(move);
                     moveCounterWhite++;
                 }
                 while (moveCounterBlack != moveCounterWhite) {
                     boardPieces.displayBoardPieces(true); // Black bottom
-                    printer.println("It's Black's turn!");
-                    printer.print("Enter your move (e.g. e7e5): ");
+                    System.out.println("It's Black's turn!");
+                    System.out.println("Enter your move (e.g. e7e5): ");
                     move = scanner.nextLine();
                     boardPieces.moveThePiece(move);
                     moveCounterBlack++;
@@ -56,20 +55,20 @@ public class Main {
         }
         else if (choice == 2) { // Black
             boardPieces.setPlayersColor("Black");
-            printer.println("Initializing the board...");
+            System.out.println("Initializing the board...");
 
             while (true) {
                 while (moveCounterWhite == moveCounterBlack) {
                     boardPieces.displayBoardPieces(true); // Black bottom
-                    printer.print("Enter your move (e.g. e7e5): ");
+                    System.out.println("Enter your move (e.g. e7e5): ");
                     move = scanner.nextLine();
                     boardPieces.moveThePiece(move);
                     moveCounterWhite++;
                 }
                 while (moveCounterBlack != moveCounterWhite) {
                     boardPieces.displayBoardPieces(false); // White bottom
-                    printer.println("It's White's turn!");
-                    printer.print("Enter your move (e.g. e2e4): ");
+                    System.out.println("It's White's turn!");
+                    System.out.println("Enter your move (e.g. e2e4): ");
                     move = scanner.nextLine();
                     boardPieces.moveThePiece(move);
                     moveCounterBlack++;

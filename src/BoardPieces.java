@@ -1,5 +1,4 @@
 public class BoardPieces {
-    private final Printer printer;
     private String playersColor;
 
     private String[][] board = {
@@ -13,10 +12,6 @@ public class BoardPieces {
             {"♖", "♘", "♗", "♕", "♔", "♗", "♘", "♖"}  // 1
     };
 
-
-    public BoardPieces() {
-        this.printer = new Printer();
-    }
 
     //Player color setters
     public String getPlayersColor() {
